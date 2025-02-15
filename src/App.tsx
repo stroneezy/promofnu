@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 //import Create from "./pages/Create";
 import "./styles/app.scss";
+import Subscription from "./pages/Subscription";
+import Settings from "./pages/Settings";
 
 const App: React.FC = () => {
   return (
@@ -19,19 +21,42 @@ const App: React.FC = () => {
               <li className="sidebar-item active">
                 <a className="sidebar-link" href="/">
                   {" "}
-                  <i className="align-middle" data-feather="sliders"></i> <span className="align-middle">Dashboard</span>{" "}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders align-middle">
+                    <line x1="4" y1="21" x2="4" y2="14"></line>
+                    <line x1="4" y1="10" x2="4" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12" y2="3"></line>
+                    <line x1="20" y1="21" x2="20" y2="16"></line>
+                    <line x1="20" y1="12" x2="20" y2="3"></line>
+                    <line x1="1" y1="14" x2="7" y2="14"></line>
+                    <line x1="9" y1="8" x2="15" y2="8"></line>
+                    <line x1="17" y1="16" x2="23" y2="16"></line>
+                  </svg>{" "}
+                  <span className="align-middle">Dashboard</span>{" "}
                 </a>
               </li>
               <li className="sidebar-item">
-                <a className="sidebar-link" href="/">
+                <a className="sidebar-link" href="/subscription">
                   {" "}
-                  <i className="align-middle" data-feather="book"></i> <span className="align-middle">Subscription</span>{" "}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card align-middle">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                  </svg>{" "}
+                  <span className="align-middle">Subscription</span>{" "}
                 </a>
               </li>
               <li className="sidebar-item">
-                <a className="sidebar-link" href="/">
+                <a className="sidebar-link" href="/settings">
                   {" "}
-                  <i className="align-middle" data-feather="sliders"></i> <span className="align-middle">Theme</span>{" "}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list align-middle">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                  </svg>{" "}
+                  <span className="align-middle">Settings</span>{" "}
                 </a>
               </li>
               <li className="sidebar-header">Flyers</li>
@@ -261,6 +286,8 @@ const App: React.FC = () => {
           <main className="content">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/subscription" element={<Subscription />} />
+              <Route path="/settings" element={<Settings />} />
               <Route path="/about" element={<About />} />
             </Routes>
           </main>
