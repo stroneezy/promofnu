@@ -13,7 +13,7 @@ const Home: React.FC = () => {
                 <div className="col">
                   <a className="card p-3">
                     <div className="mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-sliders align-middle">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-sliders align-middle">
                         <line x1="4" y1="21" x2="4" y2="14"></line>
                         <line x1="4" y1="10" x2="4" y2="3"></line>
                         <line x1="12" y1="21" x2="12" y2="12"></line>
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
                 <div className="col">
                   <a className="card p-3">
                     <div className="mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" classNa="feather feather-layout">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-layout">
                         <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
                         <path d="M3 9h18M9 21V9" />
                       </svg>
@@ -42,7 +42,7 @@ const Home: React.FC = () => {
                 <div className="col">
                   <a className="card p-3">
                     <div className="mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" classNa="feather feather-layout">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-layout">
                         <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
                         <path d="M3 9h18M9 21V9" />
                       </svg>
