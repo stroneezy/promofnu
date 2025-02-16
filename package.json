@@ -16,11 +16,10 @@
     "@react-page/editor": "^5.4.5",
     "@react-page/plugins-slate": "^5.4.5",
     "bootstrap": "5.3.3",
-    "feather-icons": "4.29.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5",
-    "sass": "^1.85.0",
+    "sass": "1.78.0",
     "simplebar": "5.3.9"
   },
   "devDependencies": {

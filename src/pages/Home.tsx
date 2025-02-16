@@ -4,100 +4,53 @@ const Home: React.FC = () => {
   return (
     <Layout>
       <div className="container-fluid p-0">
-        <h1 className="h3 mb-3">
-          <strong>Dashboard</strong>
-        </h1>
-        <div className="row">
-          <div className="col-12 col-lg-8 col-xxl-9 d-flex">
-            <div className="card flex-fill">
-              <div className="card-header">
-                <h5 className="card-title mb-0">Latest Flyers</h5>
+        <div className="pp-splash">
+          <div className="card p-5">
+            <div className="align-middle mb-4">
+              <img src="images/white-logo.png" height="60" alt="" />
+              <h1 className="mt-5 mb-3">Welcome back, where to?</h1>
+              <div className="row mt-5">
+                <div className="col">
+                  <a className="card p-3">
+                    <div className="mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-sliders align-middle">
+                        <line x1="4" y1="21" x2="4" y2="14"></line>
+                        <line x1="4" y1="10" x2="4" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12" y2="3"></line>
+                        <line x1="20" y1="21" x2="20" y2="16"></line>
+                        <line x1="20" y1="12" x2="20" y2="3"></line>
+                        <line x1="1" y1="14" x2="7" y2="14"></line>
+                        <line x1="9" y1="8" x2="15" y2="8"></line>
+                        <line x1="17" y1="16" x2="23" y2="16"></line>
+                      </svg>
+                    </div>
+                    <h3 className="h4">Visit Dashboard</h3>
+                  </a>
+                </div>
+                <div className="col">
+                  <a className="card p-3">
+                    <div className="mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" classNa="feather feather-layout">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                        <path d="M3 9h18M9 21V9" />
+                      </svg>
+                    </div>
+                    <h3 className="h4">Create Flyer</h3>
+                  </a>
+                </div>
+                <div className="col">
+                  <a className="card p-3">
+                    <div className="mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" classNa="feather feather-layout">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                        <path d="M3 9h18M9 21V9" />
+                      </svg>
+                    </div>
+                    <h3 className="h4">View Past Flyers</h3>
+                  </a>
+                </div>
               </div>
-              <table className="table table-hover my-0">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th className="d-none d-xl-table-cell">Start Date</th>
-                    <th className="d-none d-xl-table-cell">End Date</th>
-                    <th>Status</th>
-                    <th className="d-none d-md-table-cell">Assignee</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>New years flyer</td>
-                    <td className="d-none d-xl-table-cell">01/01/2023</td>
-                    <td className="d-none d-xl-table-cell">31/06/2023</td>
-                    <td>
-                      <span className="badge bg-warning">In progress</span>
-                    </td>
-                    <td className="d-none d-md-table-cell">Vanessa Tucker</td>
-                  </tr>
-                  <tr>
-                    <td>Boxing day flyer</td>
-                    <td className="d-none d-xl-table-cell">01/01/2023</td>
-                    <td className="d-none d-xl-table-cell">31/06/2023</td>
-                    <td>
-                      <span className="badge bg-success">Done</span>
-                    </td>
-                    <td className="d-none d-md-table-cell">William Harris</td>
-                  </tr>
-                  <tr>
-                    <td>Christmas flyer</td>
-                    <td className="d-none d-xl-table-cell">01/01/2023</td>
-                    <td className="d-none d-xl-table-cell">31/06/2023</td>
-                    <td>
-                      <span className="badge bg-success">Done</span>
-                    </td>
-                    <td className="d-none d-md-table-cell">Sharon Lessman</td>
-                  </tr>
-                  <tr>
-                    <td>December flyer</td>
-                    <td className="d-none d-xl-table-cell">01/01/2023</td>
-                    <td className="d-none d-xl-table-cell">31/06/2023</td>
-                    <td>
-                      <span className="badge bg-warning">Draft</span>
-                    </td>
-                    <td className="d-none d-md-table-cell">Vanessa Tucker</td>
-                  </tr>
-                  <tr>
-                    <td>Black friday flyer</td>
-                    <td className="d-none d-xl-table-cell">01/01/2023</td>
-                    <td className="d-none d-xl-table-cell">31/06/2023</td>
-                    <td>
-                      <span className="badge bg-success">Done</span>
-                    </td>
-                    <td className="d-none d-md-table-cell">William Harris</td>
-                  </tr>
-                  <tr>
-                    <td>November flyer</td>
-                    <td className="d-none d-xl-table-cell">01/01/2023</td>
-                    <td className="d-none d-xl-table-cell">31/06/2023</td>
-                    <td>
-                      <span className="badge bg-success">Done</span>
-                    </td>
-                    <td className="d-none d-md-table-cell">Sharon Lessman</td>
-                  </tr>
-                  <tr>
-                    <td>Fall flyer</td>
-                    <td className="d-none d-xl-table-cell">01/01/2023</td>
-                    <td className="d-none d-xl-table-cell">31/06/2023</td>
-                    <td>
-                      <span className="badge bg-success">Done</span>
-                    </td>
-                    <td className="d-none d-md-table-cell">Christina Mason</td>
-                  </tr>
-                  <tr>
-                    <td>Thanksgiving flyer</td>
-                    <td className="d-none d-xl-table-cell">01/01/2023</td>
-                    <td className="d-none d-xl-table-cell">31/06/2023</td>
-                    <td>
-                      <span className="badge bg-success">Done</span>
-                    </td>
-                    <td className="d-none d-md-table-cell">William Harris</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>

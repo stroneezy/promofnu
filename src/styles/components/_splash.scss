@@ -1,0 +1,16 @@
+.pp-splash {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  > .card {
+    min-width: 650px;
+
+    .card {
+      box-shadow: 0 0 0.875rem 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+}

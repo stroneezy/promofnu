@@ -1,8 +1,6 @@
 /*!
- * AdminKit v3.4.0 (https://adminkit.io/)
- * Copyright 2023 Paul Laros
- * Copyright 2023 AdminKit
- * Licensed under MIT (https://github.com/adminkit/adminkit/blob/master/LICENSE)
+ * PromoPixel
+ * Michael Armstrong & Jordan Latour
  */
 
 // Variables
@@ -16,6 +14,7 @@
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
+@import "bootstrap/scss/alert";
 @import "bootstrap/scss/type";
 @import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
@@ -54,6 +53,7 @@
 @import "components/reboot";
 @import "components/sidebar";
 @import "components/sizing";
+@import "components/splash";
 @import "components/stat";
 @import "components/tables";
 @import "components/type";
