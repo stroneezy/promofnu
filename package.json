@@ -13,8 +13,11 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@react-page/editor": "^5.4.5",
-    "@react-page/plugins-slate": "^5.4.5",
+    "@calumk/editorjs-columns": "^0.3.2",
+    "@editorjs/editorjs": "^2.30.8",
+    "@editorjs/header": "^2.8.8",
+    "@editorjs/image": "^2.10.2",
+    "@editorjs/paragraph": "^2.11.7",
     "bootstrap": "5.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
