@@ -13,11 +13,9 @@ const Create: React.FC = () => {
   const editorRef = useRef<EditorJS | null>(null);
 
   useEffect(() => {
-    console.log("in");
-    console.log(editorRef.current);
     if (editorRef.current) {
-      console.log("in 2");
       const editor = new EditorJS({
+        autofocus: true,
         holder: "editorjs",
         placeholder: "Let`s make a flyer!",
         tools: {
