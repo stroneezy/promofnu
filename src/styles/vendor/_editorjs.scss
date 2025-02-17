@@ -1,0 +1,186 @@
+.ce-editor-js {
+  padding: 40px 0 20px;
+}
+
+.ce-editor-js__header {
+  border-bottom: 1px solid #e8e8eb;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  padding: 0 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.ce-editor-js__header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ce-editor-js__header-logo {
+  font-weight: bold;
+}
+
+.ce-editor-js__header-menu {
+  margin-left: auto;
+}
+
+@media all and (max-width: 730px) {
+  .ce-editor-js__header-menu {
+    margin-left: 0;
+    margin-top: 10px;
+    flex-basis: 100%;
+    font-size: 14px;
+  }
+}
+
+.ce-editor-js__header-menu a {
+  margin-left: 20px;
+}
+
+@media all and (max-width: 730px) {
+  .ce-editor-js__header-menu a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+
+.ce-editor-js__content {
+  max-width: 1268px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ce-editor-js__content--with-bg {
+  background: #f4f4f4;
+  max-width: none;
+  margin-top: -30px;
+}
+
+.ce-editor-js__output {
+  background: #1b202b;
+  overflow-x: auto;
+  padding: 0 30px;
+}
+
+.ce-editor-js__output-content {
+  max-width: 650px;
+  margin: 30px auto;
+  color: #abadc3;
+  font-family: "PT Mono", Menlo, Monaco, Consolas, Courier New, monospace;
+  font-size: 13.3px;
+}
+
+.ce-editor-js__output-content:empty {
+  display: none;
+}
+
+.ce-editor-js__button {
+  display: block;
+  margin: 50px auto;
+  max-width: 180px;
+  background: #4a9df8;
+  padding: 17px 30px;
+  box-shadow: 0 22px 18px -4px rgba(137, 207, 255, 0.77);
+  transition: all 150ms ease;
+  cursor: pointer;
+  border-radius: 31px;
+  color: #fff;
+  font-family: "PT Mono", Menlo, Monaco, Consolas, Courier New, monospace;
+  text-align: center;
+}
+
+.ce-editor-js__button:hover {
+  background: #3d8de5;
+  transform: translateY(2px);
+  box-shadow: 0 20px 15px -4px rgba(137, 207, 255, 0.77);
+}
+
+.ce-editor-js__output-footer {
+  padding: 30px 0;
+  font-size: 14.2px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.ce-editor-js__output-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.ce-editor-js__statusbar {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  font-size: 12px;
+  padding: 8px 15px;
+  z-index: 1;
+}
+
+.ce-editor-js__statusbar-button {
+  display: inline-flex;
+  margin-left: 10px;
+  background: #4a9df8;
+  padding: 6px 12px;
+  box-shadow: 0 7px 8px -4px rgba(137, 207, 255, 0.77);
+  transition: all 150ms ease;
+  cursor: pointer;
+  border-radius: 31px;
+  color: #fff;
+  font-family: "PT Mono", Menlo, Monaco, Consolas, Courier New, monospace;
+  text-align: center;
+}
+
+@media all and (max-width: 730px) {
+  .ce-editor-js__header,
+  .ce-editor-js__content {
+    padding: 0 20px;
+  }
+}
+
+/**
+   * JSON highlighter
+   */
+.sc_attr {
+  color: rgb(148, 162, 192);
+}
+.sc_key {
+  color: rgb(190, 213, 255);
+}
+.sc_toolname {
+  color: rgb(15, 205, 251);
+}
+.sc_tag {
+  color: rgb(4, 131, 216);
+}
+.sc_bool {
+  color: rgb(247, 60, 173);
+}
+
+.ce-editor-js-multiple {
+  display: grid;
+  grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+  gap: 30px;
+  padding: 30px;
+}
+
+.ce-editor-js-multiple > div {
+  background: #fff;
+  border-radius: 7px;
+  padding: 30px;
+}
+
+.ce-editorjsColumns_col {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.ce-editorjsColumns_col:focus-within {
+  box-shadow: 0 6px 18px #e8edfa80;
+}

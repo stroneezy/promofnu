@@ -7,6 +7,7 @@ import EditorJS from "@editorjs/editorjs";
 import Header from "@editorjs/header";
 import Delimiter from "@editorjs/delimiter";
 import editorJsColumns from "@calumk/editorjs-columns";
+import ProductTool from '../editor/tools/ProductTool';
 
 const Create: React.FC = () => {
   const editorRef = useRef<EditorJS | null>(null);
@@ -26,7 +27,8 @@ const Create: React.FC = () => {
               tools: {
                 delimiter: Delimiter,
                 header: Header,
-                image: Image
+                image: Image,
+                product: ProductTool
               },
               EditorJsLibrary: EditorJS, //ref EditorJS - This means only one global thing
             },
@@ -44,6 +46,7 @@ const Create: React.FC = () => {
           image: {
             class: Image,
           },
+          product: ProductTool
         },
         onReady: () => {
           console.log("Editor.js is ready!");
@@ -67,7 +70,13 @@ const Create: React.FC = () => {
   return (
     <Layout>
       <h1>Create</h1>
-      <div id="editorjs" ref={editorRef} style={{ padding: "20px", minHeight: "300px" }}></div>
+      <div className="ce-editor-js">
+        <div className="ce-editor-js__content">
+          <div className="editorjs-wrapper">
+            <div id="editorjs" ref={editorRef} style={{ padding: "20px" }}></div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };
