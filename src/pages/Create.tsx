@@ -4,9 +4,8 @@ import Layout from "../layouts/Layout";
 
 // The editor core
 import EditorJS from "@editorjs/editorjs";
-import Header from "@editorjs/Header";
-import Image from "@editorjs/Image";
-import Paragraph from "@editorjs/Paragraph";
+import Header from "@editorjs/header";
+import Delimiter from "@editorjs/delimiter";
 import editorJsColumns from "@calumk/editorjs-columns";
 
 const Create: React.FC = () => {
@@ -21,6 +20,18 @@ const Create: React.FC = () => {
         holder: "editorjs",
         placeholder: "Let`s make a flyer!",
         tools: {
+          columns: {
+            class: editorJsColumns,
+            config: {
+              tools: {
+                delimiter: Delimiter,
+                header: Header,
+                image: Image
+              },
+              EditorJsLibrary: EditorJS, //ref EditorJS - This means only one global thing
+            },
+          },
+          delimiter: Delimiter,
           header: {
             class: Header,
             inlineToolbar: true,
@@ -32,21 +43,6 @@ const Create: React.FC = () => {
           },
           image: {
             class: Image,
-          },
-          columns: {
-            class: editorJsColumns,
-            config: {
-              tools: {
-                header: Header,
-                image: Image,
-                paragraph: Paragraph
-              },
-              EditorJsLibrary: EditorJS, //ref EditorJS - This means only one global thing
-            },
-          },
-          paragraph: {
-            class: Paragraph,
-            inlineToolbar: true,
           },
         },
         onReady: () => {
