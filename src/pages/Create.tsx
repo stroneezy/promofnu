@@ -17,7 +17,7 @@ const Create: React.FC = () => {
       const editor = new EditorJS({
         autofocus: true,
         holder: "editorjs",
-        placeholder: "Let`s make a flyer!",
+        placeholder: "Hover to begin creating your flyer",
         tools: {
           columns: {
             class: editorJsColumns,
